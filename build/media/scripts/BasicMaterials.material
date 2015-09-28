@@ -1,0 +1,23 @@
+material OculusSdkMirror {
+  technique { pass {
+    vertex_program_ref BasicUV.vert {
+      
+    }
+    fragment_program_ref SelfIlluminated.frag {
+    }
+    texture_unit {
+      texture OculusMirror
+    }
+  } }
+}
+
+material OneColor {
+  technique { pass {
+    vertex_program_ref BasicUV.vert {
+      
+    }
+    fragment_program_ref OneColor.frag {
+      param_named Color float4 1.0 1.0 1.0 1.0
+    }
+  } }
+}

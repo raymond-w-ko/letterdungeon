@@ -1,0 +1,9 @@
+/Build/Debug
+/Build/Release
+/Build/*.log
+
+ipch
+.vs
+*.opensdf
+*.sdf
+*.ipch

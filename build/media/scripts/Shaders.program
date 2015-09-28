@@ -1,0 +1,19 @@
+vertex_program BasicUV.vert glsl {
+  source BasicUV.vert.glsl
+  default_params {
+    param_named_auto WorldViewProjection worldviewproj_matrix
+  }
+}
+
+fragment_program SelfIlluminated.frag glsl {
+  source SelfIlluminated.frag.glsl
+  default_params {
+    param_named Texture0 int 0
+  }
+}
+
+fragment_program OneColor.frag glsl {
+  source OneColor.frag.glsl
+  default_params {
+  }
+}
